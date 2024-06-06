@@ -1,0 +1,265 @@
+ * {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+
+}
+
+.navbar { 
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;  /* all things inside navbar occur in same line*/
+    align-items: center;
+    justify-content: space-evenly; /*evenly spreads between left and right*/
+}
+.nav-logo{
+    height: 50px;
+     width: 100px;
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;   /* covers all area*/
+    height: 50px;
+    width: 100%;
+
+}
+.border{
+    /* this is also another class defined along with nav-logo */
+    border: 1.5px transparent solid;
+}
+.border:hover{
+    border: 1.5px solid white;   /* on hovering border is seen around amazon logo*/
+}
+.address-fir{
+   color: #cccccc;
+   font-size: .8rem;   /* in rem font size will be respective to root font size so changes when size of device changes*/
+   margin-left: 15px;
+}
+.address-sec{
+   font-size: 1rem;
+   margin-left: 3px;
+}
+.add-icon{
+    display: flex; /* we want in same line*/
+    align-items: center;
+
+}
+/**box 3*/
+.nav-search{
+    display: flex;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    background-color: pink;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center; /* is se all comes to center*/
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;  /* we want curved border only on left top and bottom */
+    border: none;  /* we want to remove the by default border*/
+
+
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;  /*magnifying glass ka size badhaya*/
+    background-color: #ffaa00;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;  /*color of magnifying glass icon*/
+}
+/*box 4*/
+span{
+    /*directly adding style to span*/
+    font-size: .7rem;
+
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.nav-search:hover{
+    border: 2px solid orange;  /* on hover border changes of search bar */
+}
+/** box6 **/
+.nav-cart i{  /* only icon size changes */
+   font-size: 30px;
+}
+.nav-cart{
+    font-size: 0.085 rem;
+    font-weight: 700;
+
+}
+/* panel*/
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly; /* alligns evenly in horizontal direct*/
+
+}
+.panel-ops p{
+    /* changes are applied to all paragrapgh tags in div panel-ops*/
+    display: inline;
+    margin-left: 15px; /* increases space between all options*/
+
+    
+
+}
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700; /* makes them bolder*/
+}
+.hero-section{
+    background-image: url("hero_image.jpg");
+    /*this adds an image to that section, wee need to further give some height to see that image */
+    background-size: cover; /* done so that the image fits*/
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: end;  /* this is bcuz we want the msg to be t the end of hero section ,i.e at bottom*/
+
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center; /* allligns to center, vertically*/
+    justify-content: center; /* allligns to center, horizontically*/
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;  /* from bottom its wont stick to the end, there will be a 25px margin*/
+
+
+
+
+}
+.hero-msg a{
+    color: #007185;   /* changes color of the <a> tag that has link*/
+
+}
+/** shop section**/
+.shop-section{
+    display: flex;
+    flex-wrap: wrap; /* as wen want only 4 boxes in a line*/
+    justify-content: space-evenly; /* between all boxes there would be same space, as widhth of each box is 23 percent*/
+    background-color: #e2e7e6;  /* this is color around boxes*/
+
+
+}
+.box{
+    /*border: 2px solid black; */
+    height: 400px;
+    width: 23%;
+    background-color: white; /* this is color of boxes*/
+    padding: 20px 0px 15px;
+    margin-top: 15px; /*is se top se box ke beech mei thoda space rahega*/
+
+}
+.box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.box-content{
+    margin-left:1rem ;
+    margin-right: 1rem;
+
+
+}
+.box-content p{
+    color: #007185;
+}
+/* footer*/
+footer{
+    margin-top: 15px;
+
+}
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    display: flex; /* as we want our lists horizontally*/
+    justify-content: space-evenly;
+
+
+}
+ul{
+    margin-top: 20px;
+
+}
+ul a{
+    display:block;  /* all unordered lists come in a single line*/
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+
+}
+.foot-panel3{
+    background-color: #222f3d ;
+    color: white;
+    border-top: 0.5px solid white;
+    /* creates a line */
+    height: 70px;
+    display: flex; /* as we want our logo to be in center*/
+    justify-content: center;
+    align-items: center;
+
+
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;   /* covers all area*/
+    height: 50px;
+    width: 100px;
+}
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+
+   /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.pages{
+
+padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+    
+}
